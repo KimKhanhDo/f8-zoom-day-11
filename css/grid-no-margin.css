@@ -1,0 +1,892 @@
+/*! XXL and up */
+/*! ==== Container ====*/
+.container {
+    --columns: 12;
+    --spacer: 24px;
+
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(var(--spacer) / 2);
+    padding-right: calc(var(--spacer) / 2);
+}
+
+/*! ==== Row ====*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--spacer) / 2 * -1);
+    margin-right: calc(var(--spacer) / 2 * -1);
+}
+
+/*! ==== Default Column ====*/
+.col {
+    flex: 1 0 auto;
+}
+
+.g-0 {
+    --spacer: 0;
+}
+
+/*? Prevents flex-grow from affecting column width */
+.row > [class*='col-'],
+.row[class*='row-cols-'] > * {
+    flex: 0 0 auto;
+}
+
+/*? Apply gutter spacing to all columns */
+.col,
+.row > [class*='col-'] {
+    padding-left: calc(var(--spacer) / 2);
+    padding-right: calc(var(--spacer) / 2);
+}
+
+/*! ==== Offset Columns ====*/
+.row > [class*='offset-'] {
+    margin-left: calc(100% / var(--columns) * var(--offset-number));
+}
+
+/*! ==== Grid Columns: layout based on number of columns ====*/
+.row > [class*='col-'] {
+    width: calc(100% / var(--columns) * var(--column-number));
+}
+
+/*! ==== Row Cols Count: controls how many columns are shown per row ====*/
+.row[class*='row-cols-'] > * {
+    width: calc(100% / var(--row-cols-number));
+}
+
+/*! ==== Offset Utilities ==== */
+.offset-0 {
+    --offset-number: 0;
+}
+
+.offset-1 {
+    --offset-number: 1;
+}
+
+.offset-2 {
+    --offset-number: 2;
+}
+
+.offset-3 {
+    --offset-number: 3;
+}
+
+.offset-4 {
+    --offset-number: 4;
+}
+
+.offset-5 {
+    --offset-number: 5;
+}
+
+.offset-6 {
+    --offset-number: 6;
+}
+
+.offset-7 {
+    --offset-number: 7;
+}
+
+.offset-8 {
+    --offset-number: 8;
+}
+
+.offset-9 {
+    --offset-number: 9;
+}
+
+.offset-10 {
+    --offset-number: 10;
+}
+
+.offset-11 {
+    --offset-number: 11;
+}
+
+/*! ==== Row Column Count Utilities ==== */
+.row-cols-1 > * {
+    --row-cols-number: 1;
+}
+
+.row-cols-2 > * {
+    --row-cols-number: 2;
+}
+
+.row-cols-3 > * {
+    --row-cols-number: 3;
+}
+
+.row-cols-4 > * {
+    --row-cols-number: 4;
+}
+
+.row-cols-5 > * {
+    --row-cols-number: 5;
+}
+
+.row-cols-6 > * {
+    --row-cols-number: 6;
+}
+
+/*! ==== Column Size Utilities ==== */
+.col-1 {
+    --column-number: 1;
+}
+
+.col-2 {
+    --column-number: 2;
+}
+
+.col-3 {
+    --column-number: 3;
+}
+
+.col-4 {
+    --column-number: 4;
+}
+
+.col-5 {
+    --column-number: 5;
+}
+
+.col-6 {
+    --column-number: 6;
+}
+
+.col-7 {
+    --column-number: 7;
+}
+
+.col-8 {
+    --column-number: 8;
+}
+
+.col-9 {
+    --column-number: 9;
+}
+
+.col-10 {
+    --column-number: 10;
+}
+
+.col-11 {
+    --column-number: 11;
+}
+
+.col-12 {
+    --column-number: 12;
+}
+
+/*! ==== Display Utilities ==== */
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* ========== Responsive Media Queries ========== */
+/* Note: These contain the same structure for xl, lg, md, sm, xs with:
+   - container max-width
+   - column and offset values
+   - gutter overrides
+   - display overrides
+*/
+/*! XL applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .container {
+        max-width: 1140px;
+        --spacer: 20px;
+    }
+
+    .offset-xl-0 {
+        --offset-number: 0;
+    }
+
+    .offset-xl-1 {
+        --offset-number: 1;
+    }
+
+    .offset-xl-2 {
+        --offset-number: 2;
+    }
+
+    .offset-xl-3 {
+        --offset-number: 3;
+    }
+
+    .offset-xl-4 {
+        --offset-number: 4;
+    }
+
+    .offset-xl-5 {
+        --offset-number: 5;
+    }
+
+    .offset-xl-6 {
+        --offset-number: 6;
+    }
+
+    .offset-xl-7 {
+        --offset-number: 7;
+    }
+
+    .offset-xl-8 {
+        --offset-number: 8;
+    }
+
+    .offset-xl-9 {
+        --offset-number: 9;
+    }
+
+    .offset-xl-10 {
+        --offset-number: 10;
+    }
+
+    .offset-xl-11 {
+        --offset-number: 11;
+    }
+
+    .col-xl-1 {
+        --column-number: 1;
+    }
+
+    .col-xl-2 {
+        --column-number: 2;
+    }
+
+    .col-xl-3 {
+        --column-number: 3;
+    }
+
+    .col-xl-4 {
+        --column-number: 4;
+    }
+
+    .col-xl-5 {
+        --column-number: 5;
+    }
+
+    .col-xl-6 {
+        --column-number: 6;
+    }
+
+    .col-xl-7 {
+        --column-number: 7;
+    }
+
+    .col-xl-8 {
+        --column-number: 8;
+    }
+
+    .col-xl-9 {
+        --column-number: 9;
+    }
+
+    .col-xl-10 {
+        --column-number: 10;
+    }
+
+    .col-xl-11 {
+        --column-number: 11;
+    }
+
+    .col-xl-12 {
+        --column-number: 12;
+    }
+
+    .row-cols-xl-1 > * {
+        --row-cols-number: 1;
+    }
+
+    .row-cols-xl-2 > * {
+        --row-cols-number: 2;
+    }
+
+    .row-cols-xl-3 > * {
+        --row-cols-number: 3;
+    }
+
+    .row-cols-xl-4 > * {
+        --row-cols-number: 4;
+    }
+
+    .row-cols-xl-5 > * {
+        --row-cols-number: 5;
+    }
+
+    .row-cols-xl-6 > * {
+        --row-cols-number: 6;
+    }
+
+    /* Display */
+    .d-xl-none {
+        display: none;
+    }
+
+    .d-xl-block {
+        display: block;
+    }
+
+    .d-xl-flex {
+        display: flex;
+    }
+}
+
+/*! LG applies to large devices (desktops, less than 1400px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+        --spacer: 18px;
+    }
+
+    .offset-lg-0 {
+        --offset-number: 0;
+    }
+
+    .offset-lg-1 {
+        --offset-number: 1;
+    }
+
+    .offset-lg-2 {
+        --offset-number: 2;
+    }
+
+    .offset-lg-3 {
+        --offset-number: 3;
+    }
+
+    .offset-lg-4 {
+        --offset-number: 4;
+    }
+
+    .offset-lg-5 {
+        --offset-number: 5;
+    }
+
+    .offset-lg-6 {
+        --offset-number: 6;
+    }
+
+    .offset-lg-7 {
+        --offset-number: 7;
+    }
+
+    .offset-lg-8 {
+        --offset-number: 8;
+    }
+
+    .offset-lg-9 {
+        --offset-number: 9;
+    }
+
+    .offset-lg-10 {
+        --offset-number: 10;
+    }
+
+    .offset-lg-11 {
+        --offset-number: 11;
+    }
+
+    .col-lg-1 {
+        --column-number: 1;
+    }
+
+    .col-lg-2 {
+        --column-number: 2;
+    }
+
+    .col-lg-3 {
+        --column-number: 3;
+    }
+
+    .col-lg-4 {
+        --column-number: 4;
+    }
+
+    .col-lg-5 {
+        --column-number: 5;
+    }
+
+    .col-lg-6 {
+        --column-number: 6;
+    }
+
+    .col-lg-7 {
+        --column-number: 7;
+    }
+
+    .col-lg-8 {
+        --column-number: 8;
+    }
+
+    .col-lg-9 {
+        --column-number: 9;
+    }
+
+    .col-lg-10 {
+        --column-number: 10;
+    }
+
+    .col-lg-11 {
+        --column-number: 11;
+    }
+
+    .col-lg-12 {
+        --column-number: 12;
+    }
+
+    .row-cols-lg-1 > * {
+        --row-cols-number: 1;
+    }
+
+    .row-cols-lg-2 > * {
+        --row-cols-number: 2;
+    }
+
+    .row-cols-lg-3 > * {
+        --row-cols-number: 3;
+    }
+
+    .row-cols-lg-4 > * {
+        --row-cols-number: 4;
+    }
+
+    .row-cols-lg-5 > * {
+        --row-cols-number: 5;
+    }
+
+    .row-cols-lg-6 > * {
+        --row-cols-number: 6;
+    }
+
+    /* Display */
+    .d-lg-none {
+        display: none;
+    }
+
+    .d-lg-block {
+        display: block;
+    }
+
+    .d-lg-flex {
+        display: flex;
+    }
+}
+
+/*! MD applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+        --spacer: 16px;
+    }
+
+    .offset-md-0 {
+        --offset-number: 0;
+    }
+
+    .offset-md-1 {
+        --offset-number: 1;
+    }
+
+    .offset-md-2 {
+        --offset-number: 2;
+    }
+
+    .offset-md-3 {
+        --offset-number: 3;
+    }
+
+    .offset-md-4 {
+        --offset-number: 4;
+    }
+
+    .offset-md-5 {
+        --offset-number: 5;
+    }
+
+    .offset-md-6 {
+        --offset-number: 6;
+    }
+
+    .offset-md-7 {
+        --offset-number: 7;
+    }
+
+    .offset-md-8 {
+        --offset-number: 8;
+    }
+
+    .offset-md-9 {
+        --offset-number: 9;
+    }
+
+    .offset-md-10 {
+        --offset-number: 10;
+    }
+
+    .offset-md-11 {
+        --offset-number: 11;
+    }
+
+    .col-md-1 {
+        --column-number: 1;
+    }
+
+    .col-md-2 {
+        --column-number: 2;
+    }
+
+    .col-md-3 {
+        --column-number: 3;
+    }
+
+    .col-md-4 {
+        --column-number: 4;
+    }
+
+    .col-md-5 {
+        --column-number: 5;
+    }
+
+    .col-md-6 {
+        --column-number: 6;
+    }
+
+    .col-md-7 {
+        --column-number: 7;
+    }
+
+    .col-md-8 {
+        --column-number: 8;
+    }
+
+    .col-md-9 {
+        --column-number: 9;
+    }
+
+    .col-md-10 {
+        --column-number: 10;
+    }
+
+    .col-md-11 {
+        --column-number: 11;
+    }
+
+    .col-md-12 {
+        --column-number: 12;
+    }
+
+    .row-cols-md-1 > * {
+        --row-cols-number: 1;
+    }
+
+    .row-cols-md-2 > * {
+        --row-cols-number: 2;
+    }
+
+    .row-cols-md-3 > * {
+        --row-cols-number: 3;
+    }
+
+    .row-cols-md-4 > * {
+        --row-cols-number: 4;
+    }
+
+    .row-cols-md-5 > * {
+        --row-cols-number: 5;
+    }
+
+    .row-cols-md-6 > * {
+        --row-cols-number: 6;
+    }
+
+    /* Display */
+    .d-md-none {
+        display: none;
+    }
+
+    .d-md-block {
+        display: block;
+    }
+
+    .d-md-flex {
+        display: flex;
+    }
+}
+
+/*! SM applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+        --spacer: 14px;
+    }
+
+    .offset-sm-0 {
+        --offset-number: 0;
+    }
+
+    .offset-sm-1 {
+        --offset-number: 1;
+    }
+
+    .offset-sm-2 {
+        --offset-number: 2;
+    }
+
+    .offset-sm-3 {
+        --offset-number: 3;
+    }
+
+    .offset-sm-4 {
+        --offset-number: 4;
+    }
+
+    .offset-sm-5 {
+        --offset-number: 5;
+    }
+
+    .offset-sm-6 {
+        --offset-number: 6;
+    }
+
+    .offset-sm-7 {
+        --offset-number: 7;
+    }
+
+    .offset-sm-8 {
+        --offset-number: 8;
+    }
+
+    .offset-sm-9 {
+        --offset-number: 9;
+    }
+
+    .offset-sm-10 {
+        --offset-number: 10;
+    }
+
+    .offset-sm-11 {
+        --offset-number: 11;
+    }
+
+    .col-sm-1 {
+        --column-number: 1;
+    }
+
+    .col-sm-2 {
+        --column-number: 2;
+    }
+
+    .col-sm-3 {
+        --column-number: 3;
+    }
+
+    .col-sm-4 {
+        --column-number: 4;
+    }
+
+    .col-sm-5 {
+        --column-number: 5;
+    }
+
+    .col-sm-6 {
+        --column-number: 6;
+    }
+
+    .col-sm-7 {
+        --column-number: 7;
+    }
+
+    .col-sm-8 {
+        --column-number: 8;
+    }
+
+    .col-sm-9 {
+        --column-number: 9;
+    }
+
+    .col-sm-10 {
+        --column-number: 10;
+    }
+
+    .col-sm-11 {
+        --column-number: 11;
+    }
+
+    .col-sm-12 {
+        --column-number: 12;
+    }
+
+    .row-cols-sm-1 > * {
+        --row-cols-number: 1;
+    }
+
+    .row-cols-sm-2 > * {
+        --row-cols-number: 2;
+    }
+
+    .row-cols-sm-3 > * {
+        --row-cols-number: 3;
+    }
+
+    .row-cols-sm-4 > * {
+        --row-cols-number: 4;
+    }
+
+    .row-cols-sm-5 > * {
+        --row-cols-number: 5;
+    }
+
+    .row-cols-sm-6 > * {
+        --row-cols-number: 6;
+    }
+
+    /* Display */
+    .d-sm-none {
+        display: none;
+    }
+
+    .d-sm-block {
+        display: block;
+    }
+
+    .d-sm-flex {
+        display: flex;
+    }
+}
+
+/*! XS applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        --spacer: 10px;
+    }
+
+    .offset-xs-0 {
+        --offset-number: 0;
+    }
+
+    .offset-xs-1 {
+        --offset-number: 1;
+    }
+
+    .offset-xs-2 {
+        --offset-number: 2;
+    }
+
+    .offset-xs-3 {
+        --offset-number: 3;
+    }
+
+    .offset-xs-4 {
+        --offset-number: 4;
+    }
+
+    .offset-xs-5 {
+        --offset-number: 5;
+    }
+
+    .offset-xs-6 {
+        --offset-number: 6;
+    }
+
+    .offset-xs-7 {
+        --offset-number: 7;
+    }
+
+    .offset-xs-8 {
+        --offset-number: 8;
+    }
+
+    .offset-xs-9 {
+        --offset-number: 9;
+    }
+
+    .offset-xs-10 {
+        --offset-number: 10;
+    }
+
+    .offset-xs-11 {
+        --offset-number: 11;
+    }
+
+    .col-xs-1 {
+        --column-number: 1;
+    }
+
+    .col-xs-2 {
+        --column-number: 2;
+    }
+
+    .col-xs-3 {
+        --column-number: 3;
+    }
+
+    .col-xs-4 {
+        --column-number: 4;
+    }
+
+    .col-xs-5 {
+        --column-number: 5;
+    }
+
+    .col-xs-6 {
+        --column-number: 6;
+    }
+
+    .col-xs-7 {
+        --column-number: 7;
+    }
+
+    .col-xs-8 {
+        --column-number: 8;
+    }
+
+    .col-xs-9 {
+        --column-number: 9;
+    }
+
+    .col-xs-10 {
+        --column-number: 10;
+    }
+
+    .col-xs-11 {
+        --column-number: 11;
+    }
+
+    .col-xs-12 {
+        --column-number: 12;
+    }
+
+    .row-cols-xs-1 > * {
+        --row-cols-number: 1;
+    }
+
+    .row-cols-xs-2 > * {
+        --row-cols-number: 2;
+    }
+
+    .row-cols-xs-3 > * {
+        --row-cols-number: 3;
+    }
+
+    .row-cols-xs-4 > * {
+        --row-cols-number: 4;
+    }
+
+    .row-cols-xs-5 > * {
+        --row-cols-number: 5;
+    }
+
+    .row-cols-xs-6 > * {
+        --row-cols-number: 6;
+    }
+}

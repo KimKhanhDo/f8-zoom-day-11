@@ -1,0 +1,30 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee8e8;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.row:first-of-type {
+    margin-top: -20px;
+}
+
+.box {
+    background: yellowgreen;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+}
