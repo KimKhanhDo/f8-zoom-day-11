@@ -2,7 +2,7 @@
 /*! ==== Container ====*/
 .container {
     --columns: 12;
-    --spacer: 24px;
+    --spacer: 30px;
 
     max-width: 1320px;
     margin-left: auto;
@@ -203,7 +203,6 @@
 @media (max-width: 1399.98px) {
     .container {
         max-width: 1140px;
-        --spacer: 20px;
     }
 
     .offset-xl-0 {
@@ -344,7 +343,6 @@
 @media (max-width: 1199.98px) {
     .container {
         max-width: 960px;
-        --spacer: 18px;
     }
 
     .offset-lg-0 {
@@ -485,7 +483,7 @@
 @media (max-width: 991.98px) {
     .container {
         max-width: 720px;
-        --spacer: 16px;
+        --spacer: 24px;
     }
 
     .offset-md-0 {
@@ -626,7 +624,7 @@
 @media (max-width: 767.98px) {
     .container {
         max-width: 540px;
-        --spacer: 14px;
+        --spacer: 12px;
     }
 
     .offset-sm-0 {
@@ -767,7 +765,7 @@
 @media (max-width: 575.98px) {
     .container {
         max-width: 100%;
-        --spacer: 10px;
+        --spacer: 0;
     }
 
     .offset-xs-0 {
@@ -888,5 +886,18 @@
 
     .row-cols-xs-6 > * {
         --row-cols-number: 6;
+    }
+
+    /* Display */
+    .d-xs-none {
+        display: none;
+    }
+
+    .d-xs-block {
+        display: block;
+    }
+
+    .d-xs-flex {
+        display: flex;
     }
 }

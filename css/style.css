@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Index Menu */
+.main-container {
+    background: linear-gradient(135deg, #5c6cff, #954bff);
+}
+
+.nav-list {
+    padding: 20px;
+    text-align: center;
+    font-size: 0;
+}
+
+.item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 12px;
+    border-radius: 99px;
+
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item:hover {
+    font-weight: 500;
+    color: #1f1c24;
+    background: #d1c7ee;
+}
