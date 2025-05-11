@@ -1,0 +1,259 @@
+.drawer-open,
+.nav-wrapper .logo,
+.drawer-close {
+    display: none;
+}
+
+/*! XL applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/*! LG applies to large devices (desktops, less than 1400px) */
+@media (max-width: 1199.98px) {
+    .hero {
+        margin-top: 30px;
+        padding: 65px 0 100px 0;
+    }
+
+    .hero__heading {
+        max-width: 450px;
+        font-size: 4.6rem;
+    }
+
+    .hero__desc {
+        max-width: 450px;
+        font-size: 1.6rem;
+    }
+
+    .hero-btn {
+        font-size: 1.6rem;
+    }
+
+    .hero__decor-groups {
+        width: 90%;
+        margin-left: auto;
+    }
+}
+
+/*! MD applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .header__body {
+        padding: 32px 0;
+    }
+
+    /* Menu overlay */
+    .nav-wrapper {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 70%;
+        background: #f8ebc9;
+
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .drawer-overlay {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity ease, visibility ease;
+        transition-duration: 0.5s;
+    }
+
+    #drawer:checked ~ .nav-wrapper {
+        transform: translateX(0);
+    }
+
+    #drawer:checked ~ .drawer-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-wrapper .logo {
+        margin-top: 15px;
+        display: flex;
+        gap: 6px;
+        padding: 40px 30px;
+    }
+
+    .logo__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo__title {
+        gap: 4.5px;
+    }
+
+    .logo__title span:first-of-type {
+        font-size: 2.6rem;
+    }
+
+    .logo__title span:last-of-type {
+        font-size: 1.6rem;
+    }
+
+    .drawer-close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 30px;
+
+        opacity: 0.6;
+        font-size: 2.5rem;
+        color: var(--white);
+    }
+
+    .navbar {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .navbar__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .navbar__item {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .navbar__item-active {
+        font-weight: normal;
+        color: inherit;
+    }
+
+    .navbar__item-active .navbar__link::after {
+        background-image: url('../icons/chevron-down.svg');
+    }
+
+    .navbar__link::after {
+        right: -20px;
+        width: 12px;
+        height: 8px;
+    }
+
+    /*  */
+
+    .logo {
+        display: none;
+    }
+
+    .drawer-open {
+        display: block;
+    }
+
+    .drawer-open i {
+        font-size: 3rem;
+    }
+
+    .hero {
+        margin-top: 20px;
+        padding: 40px 0 60px 0;
+    }
+
+    .hero__heading {
+        font-size: 4rem;
+    }
+
+    .hero-btn {
+        line-height: 56px;
+        padding: 0 22px;
+    }
+
+    .hero__media {
+        margin-top: 150px;
+    }
+
+    .hero__decor-groups {
+        max-width: initial;
+        width: 85%;
+        margin-left: auto;
+    }
+
+    .hero__media-groups {
+        width: 30%;
+        top: -12.5%;
+        left: -15%;
+    }
+
+    .hero__play-img {
+        padding: 10px;
+    }
+}
+
+/*! SM applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .drawer-close {
+        font-size: 2.2rem;
+    }
+
+    .navbar__list {
+        gap: 5px;
+    }
+
+    .navbar__item {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        margin-top: 0;
+    }
+
+    .drawer-open i {
+        font-size: 3rem;
+    }
+
+    .phone__number {
+        font-size: 2rem;
+    }
+
+    .hero__label {
+        font-size: 1.6rem;
+    }
+
+    .hero__heading {
+        font-size: 3.5rem;
+    }
+
+    .hero__play-img {
+        padding: 8px;
+    }
+}
+
+/*! XS applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero__media-groups {
+        width: 26%;
+        top: -13%;
+        left: 0;
+    }
+
+    .hero__decor-groups {
+        width: 100%;
+    }
+
+    .hero__play-img {
+        padding: 6px;
+    }
+}

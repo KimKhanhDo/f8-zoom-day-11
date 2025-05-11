@@ -6,17 +6,9 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <title>Home</title>
-        <link
-            rel="stylesheet"
-            href="./css/reset.css"
-        />
+        <title>Law Firm</title>
 
-        <link
-            rel="stylesheet"
-            href="./css/style.css"
-        />
-
+        <!-- Embed Fonts -->
         <link
             rel="preconnect"
             href="https://fonts.googleapis.com"
@@ -27,28 +19,196 @@
             crossorigin
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+
+        <!-- CSS -->
+        <link
+            rel="stylesheet"
+            href="./assests/css/reset.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assests/css/grid-no-margin.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assests/css/style.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assests/css/responsive.css"
+        />
     </head>
-    <body>
-        <div class="main-container">
-            <ul class="nav-list">
-                <li class="item">
-                    <a
-                        target="_blank"
-                        href="/grid-system.html"
-                        >Grid System from A - Z</a
+    <body style="height: 1000px">
+        <header class="header">
+            <div class="container">
+                <!-- Header -->
+                <div class="header__body">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img
+                            src="./assests/icons/hammer.svg"
+                            alt=""
+                            class="logo__icon"
+                        />
+                        <div class="logo__title">
+                            <span>Justice</span>
+                            <span>Law Firm</span>
+                        </div>
+                    </div>
+
+                    <label
+                        for="drawer"
+                        class="drawer-open"
                     >
-                </li>
-                <li class="item">
-                    <a
-                        target="_blank"
-                        href="/grid-system.html"
-                        >Grid System from A - Z</a
-                    >
-                </li>
-            </ul>
-        </div>
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <!-- Start Navigation -->
+                    <input
+                        type="checkbox"
+                        id="drawer"
+                        hidden
+                    />
+
+                    <label
+                        for="drawer"
+                        class="drawer-overlay"
+                    ></label>
+
+                    <div class="nav-wrapper">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <img
+                                src="./assests/icons/hammer.svg"
+                                alt=""
+                                class="logo__icon"
+                            />
+                            <div class="logo__title">
+                                <span>Justice</span>
+                                <span>Law Firm</span>
+                            </div>
+                        </div>
+                        <!-- Drawer close -->
+                        <label
+                            for="drawer"
+                            class="drawer-close"
+                        >
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+
+                        <!-- Navbar -->
+                        <nav class="navbar">
+                            <ul class="navbar__list">
+                                <li class="navbar__item navbar__item-active">
+                                    <a
+                                        href="#!"
+                                        class="navbar__link"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a
+                                        href="#!"
+                                        class="navbar__link"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a
+                                        href="#!"
+                                        class="navbar__link"
+                                        >Practice Areas</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a
+                                        href="#!"
+                                        class="navbar__link"
+                                        >Attorneys</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a
+                                        href="#!"
+                                        class="navbar__link"
+                                        >Page</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="phone">
+                        <span class="phone__label">Call :</span>
+                        <span class="phone__number">(000) 123 456 789</span>
+                    </div>
+                </div>
+
+                <!-- Hero -->
+                <div class="hero">
+                    <div class="row row-cols-2 row-cols-md-1">
+                        <div class="col">
+                            <div class="hero__info">
+                                <p class="hero__label">
+                                    #1 Law Firm in New York
+                                </p>
+                                <h1 class="hero__heading">
+                                    Where People Meets Personalized Support.
+                                </h1>
+                                <p class="hero__desc">
+                                    Where every injury is personal. We are a
+                                    different kind of law firm. Let our small,
+                                    passionate group of trial lawyers fight for
+                                    your rights!
+                                </p>
+                                <a
+                                    href="#!"
+                                    class="btn hero-btn"
+                                    >Get a Consultations</a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="hero__media">
+                                <div class="hero__decor-groups">
+                                    <div class="hero__media-groups">
+                                        <img
+                                            src="./assests/img/img-hero-play-video.png"
+                                            alt=""
+                                            class="hero__play-img"
+                                        />
+                                        <img
+                                            src="./assests/icons/hero-decor-letters.svg"
+                                            alt=""
+                                            class="hero__decor-letters"
+                                        />
+                                    </div>
+                                    <img
+                                        src="./assests/img/img-hero-media.jpg"
+                                        alt=""
+                                        class="hero__img"
+                                    />
+                                    <img
+                                        src="./assests/img/img-hero-deco.png"
+                                        alt=""
+                                        class="hero__decor-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
