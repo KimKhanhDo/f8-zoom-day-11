@@ -133,6 +133,32 @@
     .team__block {
         margin-top: 70px;
     }
+
+    /* Awards */
+    .awards__media .col {
+        margin-top: 30px;
+    }
+
+    .awards__wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .col:first-of-type .awards__thumb {
+        width: 180px;
+    }
+
+    .col:nth-of-type(2) .awards__thumb {
+        width: 251px;
+    }
+
+    .col:nth-of-type(3) .awards__thumb {
+        width: 180px;
+    }
+
+    .col:nth-of-type(4) .awards__thumb {
+        width: 150px;
+    }
 }
 
 /*! MD applies to medium devices (tablets, less than 992px) */
@@ -399,6 +425,36 @@
     .team__desc {
         margin: 18px 0 40px;
     }
+
+    .team__btn {
+        min-width: 180px;
+    }
+
+    /* Awards */
+    .awards__inner {
+        padding: 80px 0;
+    }
+
+    .awards__media {
+        margin-top: 40px;
+    }
+
+    .awards__heading {
+        font-size: 3.8rem;
+    }
+
+    .col:first-of-type .awards__thumb {
+        width: 200px;
+    }
+
+    .col:nth-of-type(2) .awards__thumb {
+        width: 270px;
+    }
+
+    .col:nth-of-type(3) .awards__thumb,
+    .col:nth-of-type(4) .awards__thumb {
+        width: 200px;
+    }
 }
 
 /*! SM applies to small devices (landscape phones, less than 768px) */
@@ -631,5 +687,14 @@
 
     .team__btn-wrap {
         margin-top: 40px;
+    }
+
+    /* Awards */
+    .awards {
+        padding: 0 20px;
+    }
+
+    .awards__inner {
+        padding: 50px 0;
     }
 }

@@ -702,3 +702,60 @@ select {
     line-height: 1.75;
     color: var(--light-green-color);
 }
+
+/* Awards */
+.awards {
+    background: var(--light-yellow-color);
+}
+
+.awards__inner {
+    padding: 100px 0;
+}
+
+.awards__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.awards__label {
+    font-size: 1.8rem;
+    font-family: var(--heading-font);
+}
+
+.awards__heading {
+    font-size: 4.2rem;
+    line-height: 1.23;
+}
+
+.awards__media {
+    margin-top: 70px;
+}
+
+.awards__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 270px;
+    height: 270px;
+    padding: 85px 36px;
+    background: var(--white-color);
+}
+
+.col:first-of-type .awards__thumb {
+    width: 136px;
+}
+
+.col:nth-of-type(2) .awards__thumb {
+    width: 198px;
+}
+
+.col:nth-of-type(3) .awards__thumb {
+    width: 143px;
+}
+
+.col:nth-of-type(4) .awards__thumb {
+    width: 100px;
+}
