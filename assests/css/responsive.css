@@ -29,6 +29,21 @@
 
 /*! LG applies to large devices (desktops, less than 1400px) */
 @media (max-width: 1199.98px) {
+    .h2-heading {
+        font-size: 3.8rem;
+    }
+
+    .hero__desc,
+    .services__desc,
+    .about__desc,
+    .about__stat-label,
+    .features__desc,
+    .features__item,
+    .team__desc,
+    .team__desc {
+        font-size: 1.6rem;
+    }
+
     .hero {
         margin-top: 30px;
         padding: 65px 0 100px 0;
@@ -36,12 +51,10 @@
 
     .hero__heading {
         max-width: 450px;
-        font-size: 4.6rem;
     }
 
     .hero__desc {
         max-width: 450px;
-        font-size: 1.6rem;
     }
 
     .hero-btn {
@@ -66,14 +79,6 @@
     }
 
     /* About */
-    .about__heading {
-        font-size: 3.6rem;
-    }
-
-    .about__desc,
-    .about__stat-label {
-        font-size: 1.6rem;
-    }
 
     .about__number {
         font-size: 2.2rem;
@@ -94,9 +99,13 @@
         margin-top: 70px;
     }
 
+    .services__desc {
+        margin: 18px 0 30px;
+    }
+
     .services__btn {
         min-width: 300px;
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 60px;
         left: 50%;
         transform: translateX(-50%);
@@ -104,10 +113,11 @@
 
     .services__btn-view-all {
         min-width: 230px;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     /* Features */
+
     .features__info {
         margin-left: 81px;
     }
@@ -134,6 +144,10 @@
         margin-top: 70px;
     }
 
+    .team__desc {
+        margin: 18px 0 30px;
+    }
+
     /* Awards */
     .awards__media .col {
         margin-top: 30px;
@@ -158,6 +172,43 @@
 
     .col:nth-of-type(4) .awards__thumb {
         width: 150px;
+    }
+
+    /* Testimonial*/
+    .testimonial {
+        margin-top: 100px;
+    }
+
+    .testimonial__btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .card__avatar {
+        width: 55px;
+        height: 55px;
+    }
+
+    .card__review {
+        margin-top: 20px;
+        font-size: 1.6rem;
+    }
+
+    .card__info {
+        margin-top: 20px;
+    }
+
+    .card__author {
+        font-size: 1.9rem;
+    }
+
+    /* FAQ */
+    .faq {
+        margin-top: 100px;
     }
 }
 
@@ -426,6 +477,10 @@
         margin: 18px 0 40px;
     }
 
+    .team__name {
+        font-size: 2rem;
+    }
+
     .team__btn {
         min-width: 180px;
     }
@@ -455,10 +510,49 @@
     .col:nth-of-type(4) .awards__thumb {
         width: 200px;
     }
+
+    /* Testimonial */
+    .testimonial__right {
+        display: none;
+    }
+
+    .testimonial__client {
+        margin-top: 50px;
+    }
+
+    .testimonial__client .col {
+        margin-top: 30px;
+    }
+
+    .card__avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card {
+        padding: 40px 45px;
+    }
+
+    .card__info {
+        margin-top: 30px;
+    }
+
+    .card__author {
+        font-size: 2rem;
+    }
+
+    /* FAQ */
+    .faq__question {
+        font-size: 2rem;
+    }
 }
 
 /*! SM applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .h2-heading {
+        font-size: 3.5rem;
+    }
+
     .header {
         padding: 20px;
     }
@@ -477,6 +571,10 @@
 
     .hero {
         margin-top: 0;
+    }
+
+    .hero__heading {
+        font-size: 3.8rem;
     }
 
     .drawer-open i {
@@ -548,13 +646,6 @@
         margin-top: 60px;
     }
 
-    .services__btn {
-        min-width: 330px;
-        font-size: 2.2rem;
-        font-weight: 700;
-        line-height: 72px;
-    }
-
     .services__heading {
         font-size: 3.8rem;
     }
@@ -565,7 +656,7 @@
 
     .services__btn {
         min-width: 400px;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 65px;
     }
 
@@ -626,16 +717,65 @@
     }
 
     .team__btn {
+        min-width: 400px;
         font-size: 1.6rem;
     }
 
     .team__name {
         font-size: 2rem;
     }
+
+    /* Testimonial */
+    .testimonial {
+        margin-top: 80px;
+    }
+
+    .testimonial__heading {
+        font-size: 3.8rem;
+    }
+
+    .testimonial__client {
+        margin-top: 30px;
+    }
+
+    .card {
+        padding: 30px 35px;
+    }
+
+    /* FQA */
+    .faq__question {
+        font-size: 1.8rem;
+    }
+
+    .faq__answer {
+        font-size: 1.6rem;
+    }
+
+    .faq__btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .faq__item::after {
+        margin-top: 25px;
+    }
 }
 
 /*! XS applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .h2-heading {
+        font-size: 3rem;
+    }
+
+    .hero__label,
+    .about__label {
+        font-size: 1.2rem;
+    }
+
+    .label {
+        font-size: 1.5rem;
+    }
+
     .hero__media-groups {
         width: 26%;
         top: -13%;
@@ -652,10 +792,6 @@
 
     .about {
         padding: 30px 20px;
-    }
-
-    .about__heading {
-        font-size: 3.5rem;
     }
 
     .services {
@@ -696,5 +832,27 @@
 
     .awards__inner {
         padding: 50px 0;
+    }
+
+    .awards__media {
+        margin-top: 30px;
+    }
+
+    /* Testimonial */
+    .testimonial__inner {
+        padding: 0 20px;
+    }
+
+    .card__review {
+        font-size: 1.6rem;
+    }
+
+    .card__author {
+        font-size: 1.8rem;
+    }
+
+    /* FAQ */
+    .faq__inner {
+        padding: 0 20px;
     }
 }
