@@ -406,7 +406,7 @@ select {
 }
 
 .services__desc {
-    margin-top: 18px;
+    margin: 18px 0 70px;
     max-width: 470px;
     font-size: 1.8rem;
     color: var(--grey-color);
@@ -415,7 +415,7 @@ select {
 
 .services__block {
     position: relative;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .services__block:hover img {
@@ -424,8 +424,8 @@ select {
 
 .services__thumb {
     display: block;
-    width: 370px;
-    height: 370px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -582,4 +582,123 @@ select {
 
 .features__btn {
     margin-top: 38px;
+}
+
+/* Team */
+.team {
+    margin-top: 150px;
+    background: var(--black-color);
+}
+
+.team__inner {
+    padding: 100px 0;
+}
+
+.team__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__label {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+.team__heading {
+    margin-top: 6px;
+    font-size: 4.2rem;
+    line-height: 1.23;
+    color: var(--white-color);
+}
+
+.team__desc {
+    margin: 18px 0 70px;
+    max-width: 470px;
+    font-size: 1.8rem;
+    color: var(--light-green-color);
+    text-align: center;
+}
+
+.team__block {
+    position: relative;
+    margin-top: 30px;
+}
+
+.team__thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.team__thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team__btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+
+    min-width: 170px;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    color: var(--white-color);
+    background: var(--primary-color);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.team__block:hover .team__btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team__block:hover img {
+    transform: translateY(-10px);
+}
+
+.col:first-of-type .team__btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team__btn-active {
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+
+.team__btn-wrap {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.team__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    color: var(--white-color);
+}
+
+.team__name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.team__title {
+    line-height: 1.75;
+    color: var(--light-green-color);
 }
